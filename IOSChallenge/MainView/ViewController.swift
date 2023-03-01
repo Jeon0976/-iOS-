@@ -40,7 +40,7 @@ extension ViewController: ViewProtocol {
         }
     }
     
-    func didTapLoadButton(sender: UIButton) {
-        print(sender.tag)
+    func reloadTableView() {
+        tableView.reloadData()
     }
 }

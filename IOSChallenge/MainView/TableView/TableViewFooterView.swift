@@ -9,8 +9,15 @@ import UIKit
 
 import SnapKit
 
+protocol TableViewFooterViewDelegate: AnyObject {
+   func didSelectAllLoad()
+}
+
 final class TableViewFooterView: UITableViewHeaderFooterView {
     static let identifier = "TableViewFooterView"
+    
+    /// button action 외부 실행을 위한 delegate 생성
+    private weak var delegate: TableViewFooterViewDelegate?
     
     private lazy var loadAllButton: UIButton = {
        let button = UIButton()
@@ -22,7 +29,8 @@ final class TableViewFooterView: UITableViewHeaderFooterView {
         return button
     }()
     
-    func setup() {
+    func setup(delegate: TableViewFooterViewDelegate) {
+        self.delegate = delegate
         setupLayout()
     }
 }
@@ -42,6 +50,6 @@ private extension TableViewFooterView {
     }
     
     @objc func didTapLoadAllButton() {
-        print("Tap!!")
+        delegate?.didSelectAllLoad()
     }
 }
