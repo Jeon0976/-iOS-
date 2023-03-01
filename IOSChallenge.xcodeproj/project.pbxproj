@@ -10,9 +10,14 @@
 		C50D88E929AEEC9D00C03533 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50D88E829AEEC9D00C03533 /* AppDelegate.swift */; };
 		C50D88EB29AEEC9D00C03533 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50D88EA29AEEC9D00C03533 /* SceneDelegate.swift */; };
 		C50D88ED29AEEC9D00C03533 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50D88EC29AEEC9D00C03533 /* ViewController.swift */; };
-		C50D88F029AEEC9D00C03533 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C50D88EE29AEEC9D00C03533 /* Main.storyboard */; };
 		C50D88F229AEEC9E00C03533 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C50D88F129AEEC9E00C03533 /* Assets.xcassets */; };
 		C50D88F529AEEC9E00C03533 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C50D88F329AEEC9E00C03533 /* LaunchScreen.storyboard */; };
+		C50D88FE29AEEF8100C03533 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C50D88FD29AEEF8100C03533 /* SnapKit */; };
+		C50D890129AEEFFA00C03533 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C50D890029AEEFFA00C03533 /* Kingfisher */; };
+		C50D890429AEF3A800C03533 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = C50D890329AEF3A800C03533 /* .swiftlint.yml */; };
+		C50D890629AEF4BB00C03533 /* ViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50D890529AEF4BB00C03533 /* ViewPresenter.swift */; };
+		C50D890829AEF7D000C03533 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50D890729AEF7D000C03533 /* TableViewCell.swift */; };
+		C50D890B29AEF7F700C03533 /* TableViewFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50D890A29AEF7F700C03533 /* TableViewFooterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +25,13 @@
 		C50D88E829AEEC9D00C03533 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C50D88EA29AEEC9D00C03533 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C50D88EC29AEEC9D00C03533 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C50D88EF29AEEC9D00C03533 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C50D88F129AEEC9E00C03533 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C50D88F429AEEC9E00C03533 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C50D88F629AEEC9E00C03533 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C50D890329AEF3A800C03533 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		C50D890529AEF4BB00C03533 /* ViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPresenter.swift; sourceTree = "<group>"; };
+		C50D890729AEF7D000C03533 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		C50D890A29AEF7F700C03533 /* TableViewFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewFooterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C50D890129AEEFFA00C03533 /* Kingfisher in Frameworks */,
+				C50D88FE29AEEF8100C03533 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +50,7 @@
 		C50D88DC29AEEC9D00C03533 = {
 			isa = PBXGroup;
 			children = (
+				C50D890329AEF3A800C03533 /* .swiftlint.yml */,
 				C50D88E729AEEC9D00C03533 /* IOSChallenge */,
 				C50D88E629AEEC9D00C03533 /* Products */,
 			);
@@ -58,13 +69,31 @@
 			children = (
 				C50D88E829AEEC9D00C03533 /* AppDelegate.swift */,
 				C50D88EA29AEEC9D00C03533 /* SceneDelegate.swift */,
-				C50D88EC29AEEC9D00C03533 /* ViewController.swift */,
-				C50D88EE29AEEC9D00C03533 /* Main.storyboard */,
+				C50D890929AEF7DA00C03533 /* MainView */,
 				C50D88F129AEEC9E00C03533 /* Assets.xcassets */,
 				C50D88F329AEEC9E00C03533 /* LaunchScreen.storyboard */,
 				C50D88F629AEEC9E00C03533 /* Info.plist */,
 			);
 			path = IOSChallenge;
+			sourceTree = "<group>";
+		};
+		C50D890929AEF7DA00C03533 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				C50D88EC29AEEC9D00C03533 /* ViewController.swift */,
+				C50D890529AEF4BB00C03533 /* ViewPresenter.swift */,
+				C50D890C29AEF7FB00C03533 /* TableView */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		C50D890C29AEF7FB00C03533 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				C50D890729AEF7D000C03533 /* TableViewCell.swift */,
+				C50D890A29AEF7F700C03533 /* TableViewFooterView.swift */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,12 +106,17 @@
 				C50D88E129AEEC9D00C03533 /* Sources */,
 				C50D88E229AEEC9D00C03533 /* Frameworks */,
 				C50D88E329AEEC9D00C03533 /* Resources */,
+				C50D890229AEF02400C03533 /* SwiftLint */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = IOSChallenge;
+			packageProductDependencies = (
+				C50D88FD29AEEF8100C03533 /* SnapKit */,
+				C50D890029AEEFFA00C03533 /* Kingfisher */,
+			);
 			productName = IOSChallenge;
 			productReference = C50D88E529AEEC9D00C03533 /* IOSChallenge.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +145,10 @@
 				Base,
 			);
 			mainGroup = C50D88DC29AEEC9D00C03533;
+			packageReferences = (
+				C50D88FC29AEEF8100C03533 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				C50D88FF29AEEFFA00C03533 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = C50D88E629AEEC9D00C03533 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,36 +163,53 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C50D890429AEF3A800C03533 /* .swiftlint.yml in Resources */,
 				C50D88F529AEEC9E00C03533 /* LaunchScreen.storyboard in Resources */,
 				C50D88F229AEEC9E00C03533 /* Assets.xcassets in Resources */,
-				C50D88F029AEEC9D00C03533 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C50D890229AEF02400C03533 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "    export PATH=\"$PATH:/opt/homebrew/bin\"\n    if which swiftlint > /dev/null; then\n      swiftlint\n    else\n      echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n    fi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C50D88E129AEEC9D00C03533 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C50D890829AEF7D000C03533 /* TableViewCell.swift in Sources */,
 				C50D88ED29AEEC9D00C03533 /* ViewController.swift in Sources */,
+				C50D890629AEF4BB00C03533 /* ViewPresenter.swift in Sources */,
 				C50D88E929AEEC9D00C03533 /* AppDelegate.swift in Sources */,
 				C50D88EB29AEEC9D00C03533 /* SceneDelegate.swift in Sources */,
+				C50D890B29AEF7F700C03533 /* TableViewFooterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C50D88EE29AEEC9D00C03533 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C50D88EF29AEEC9D00C03533 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C50D88F329AEEC9E00C03533 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +347,6 @@
 				INFOPLIST_FILE = IOSChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +374,6 @@
 				INFOPLIST_FILE = IOSChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +411,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C50D88FC29AEEF8100C03533 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		C50D88FF29AEEFFA00C03533 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C50D88FD29AEEF8100C03533 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C50D88FC29AEEF8100C03533 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		C50D890029AEEFFA00C03533 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C50D88FF29AEEFFA00C03533 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C50D88DD29AEEC9D00C03533 /* Project object */;
 }
