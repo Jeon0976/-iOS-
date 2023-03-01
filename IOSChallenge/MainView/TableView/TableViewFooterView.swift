@@ -17,6 +17,7 @@ final class TableViewFooterView: UITableViewHeaderFooterView {
         
         button.setTitle("Load All Images", for: .normal)
         button.configuration = .filled()
+        button.addTarget(self, action: #selector(didTapLoadAllButton), for: .touchUpInside)
         
         return button
     }()
@@ -38,5 +39,9 @@ private extension TableViewFooterView {
             $0.top.equalToSuperview().inset(inset)
             $0.bottom.equalToSuperview().inset(inset)
         }
+    }
+    
+    @objc func didTapLoadAllButton() {
+        print("Tap!!")
     }
 }

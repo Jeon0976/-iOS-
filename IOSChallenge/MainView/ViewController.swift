@@ -39,4 +39,8 @@ extension ViewController: ViewProtocol {
             $0.edges.equalToSuperview()
         }
     }
+    
+    func didTapLoadButton(sender: UIButton) {
+        print(sender.tag)
+    }
 }

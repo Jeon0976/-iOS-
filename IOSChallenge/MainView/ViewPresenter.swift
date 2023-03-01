@@ -9,6 +9,7 @@ import UIKit
 
 protocol ViewProtocol: AnyObject {
     func setupView()
+    func didTapLoadButton(sender: UIButton)
 }
 
 final class ViewPresenter: NSObject {
@@ -20,6 +21,10 @@ final class ViewPresenter: NSObject {
     
     func viewDidLoad() {
         viewController?.setupView()
+    }
+    
+    @objc func didTapLoadButton(sender: UIButton) {
+        viewController?.didTapLoadButton(sender: sender)
     }
 }
 
@@ -39,6 +44,8 @@ extension ViewPresenter: UITableViewDataSource {
         ) as? TableViewCell
         
         cell?.setup()
+        cell?.loadButton.tag = indexPath.row
+        cell?.loadButton.addTarget(self, action: #selector(didTapLoadButton(sender: )), for: .touchUpInside)
         
         return cell ?? UITableViewCell()
     }

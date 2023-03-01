@@ -12,7 +12,7 @@ import SnapKit
 final class TableViewCell: UITableViewCell {
     static let identifier = "TableViewCell"
     
-    private lazy var image: UIImageView = {
+    lazy var image: UIImageView = {
         let imageView = UIImageView()
         
         var config = UIImage.SymbolConfiguration(font: .systemFont(ofSize: 80.0))
@@ -24,7 +24,7 @@ final class TableViewCell: UITableViewCell {
         return imageView
     }()
     
-    private lazy var progressBar: UIProgressView = {
+    lazy var progressBar: UIProgressView = {
         let progressBar = UIProgressView()
         
         progressBar.progressViewStyle = .default
@@ -35,7 +35,7 @@ final class TableViewCell: UITableViewCell {
         return progressBar
     }()
     
-    private lazy var loadButton: UIButton = {
+    lazy var loadButton: UIButton = {
        let button = UIButton()
         
         button.setTitle("Load", for: .normal)
@@ -48,14 +48,15 @@ final class TableViewCell: UITableViewCell {
         setupLayout()
         
         selectionStyle = .none
+
     }
 }
 
 private extension TableViewCell {
     func setupLayout() {
         [image, progressBar, loadButton]
-            .forEach { addSubview($0) }
-        
+            .forEach { contentView.addSubview($0) }
+            
         let inset: CGFloat = 16.0
         image.snp.makeConstraints {
             $0.top.equalToSuperview().inset(inset)
@@ -74,4 +75,5 @@ private extension TableViewCell {
             $0.trailing.equalToSuperview().inset(inset)
         }
     }
+    
 }
